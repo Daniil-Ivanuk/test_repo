@@ -310,7 +310,7 @@ corr_matrix = stationary_df.corr()
 
 plt.figure(figsize=(10, 8))
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', center=0, fmt='.2f', square=True)
-plt.title('Корреляционная матрица показателей\n(после удаления тренда и сезонности)', fontsize=14)
+plt.title('Корреляционная матрица показателей\n', fontsize=14)
 plt.tight_layout()
 
 corr_file = os.path.join(output_folder, 'correlation_matrix_stationary.png')
